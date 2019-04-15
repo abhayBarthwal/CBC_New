@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Tourists</title>
+		<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8fdUWKRJCVWGK7CX5SnTOo1QxuczZ8_A&v=3.exp&sensor=false&libraries=places"></script>
+				</head>
+<body>
+{% block title %}<h2 style="padding-left: 50%">Shop</h2>{% endblock %}
+
+{% block content %}
+  <h2 style="padding-left: 50%">Login</h2>
+  <form style="padding-left: 50%; padding-top: 10%" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+     <a href="http://127.0.0.1:8000/signup/">Signup</a>
+  </form>
+{% endblock %}
+</body>
+</html>
