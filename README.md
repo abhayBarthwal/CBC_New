@@ -11,3 +11,6 @@ The products can be bought using stripe credit card payment.
 *Please do not use real credit card details for purchase
 *you can use card 4242 4242 4242 4242 with future date and any cvv.
 The page is dynamic and can fit any screen size.
+
+*Please add your stripe authentication credentials
+*Please add your DB authentication credentials
